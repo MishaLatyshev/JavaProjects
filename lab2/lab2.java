@@ -6,9 +6,7 @@ public class lab2 {
         System.out.println("Введите целое число (<15) для вычисления его факториала:");
             if (scanner.hasNextInt()) {
                 int number = scanner.nextInt();
-                if (number == 0)
-                    System.out.println("Факториал 0:" + 1);
-                if (number > 1 & number <= 15) {
+                if (number >= 0 & number <= 15) {
                     long result = 1;
                     for (int i = 1; i <= number; i++) {
                         result = result * i;
@@ -26,3 +24,4 @@ public class lab2 {
         scanner.close();
     }
 }
+
